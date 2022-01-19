@@ -18,3 +18,14 @@ update cricket set pid=1 where pname= 'kevin';
 
 
 
+DATA types
+smallint -32768 to +32767
+integer -2147483648 to +2147483647
+bigint  -9223372036854775808 to +9223372036854775807
+decimal upto 131072 digits before decimal points and upto 1683 digits after decimal points
+numeric upto 131072 digits before decimal points and upto 1683 digits after decimal points
+real 6 decimal digits precision
+double precision 15 decimal digits precision
+smallserial 1 to 32767
+serial 1 to 2147483647
+bigserial 1 to 9223372036854775807
