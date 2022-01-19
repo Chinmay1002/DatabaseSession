@@ -2,4 +2,19 @@ Getting started with the database(Postgres).
 
 1. Create Database = create database 19jan
 
-2.
+2. create table badminton;
+insert into badminton (pname, sport) values ('leechong', 'badminton'), ('chenlong', 'badminton'), ('kevin', 'badminton'), ('gideon', 'badminton');
+
+
+insert into badminton (pname, sport) values ('virat', 'cricket'), ('avesh', 'cricket'), ('sachin', 'cricket'), ('yuvraj', 'cricket');
+
+create table cricket as select pname, sport from badminton where sport = 'cricket';
+
+alter table cricket add constraint pr_key primary key(jerseyno);
+
+alter table cricket add constraint fk foreign key(jerseyno) references badminton (jerseyno);
+
+update cricket set pid=1 where pname= 'kevin';
+
+
+
