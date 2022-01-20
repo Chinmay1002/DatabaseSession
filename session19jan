@@ -19,13 +19,32 @@ update cricket set pid=1 where pname= 'kevin';
 
 
 DATA types
-smallint -32768 to +32767
-integer -2147483648 to +2147483647
-bigint  -9223372036854775808 to +9223372036854775807
-decimal upto 131072 digits before decimal points and upto 1683 digits after decimal points
-numeric upto 131072 digits before decimal points and upto 1683 digits after decimal points
-real 6 decimal digits precision
-double precision 15 decimal digits precision
-smallserial 1 to 32767
-serial 1 to 2147483647
-bigserial 1 to 9223372036854775807
+Numeric
+Moneytary
+Character
+Binary = Bytea hex, Bytea Escape
+Date/Time Types
+Boolean 
+Enumerated = static, ordered set of values
+Geometric = point, line, lseg, box, path, path, polygon, circle.
+Network Address = cidr, inet, macaddr
+Bit String = Bit(n) and Bit(Varying)
+Text search types = tsvector, tsquery
+UUID - University unique Indentifiers
+XML = to store XML data
+
+
+JSON = String, Boolean, number, null
+create table json(id serial not null primary key, name json);
+insert into json(name) values ('{"name" : "chinmay"}');
+
+
+
+
+
+Arrays
+create table Arrays(name text, c_id integer[], course text[][]);
+insert into Arrays(name, c_id, course) values ('chinmay', '{1,2}', '{{"Maths", "Chemistry"}, {"geometry", "Science"}}');
+
+
+
