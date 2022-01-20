@@ -38,6 +38,8 @@ JSON = String, Boolean, number, null
 create table json(id serial not null primary key, name json);
 insert into json(name) values ('{"name" : "chinmay"}');
 
+to retrieve = select columnname -> 'targetname' as name from tablename
+
 
 
 
