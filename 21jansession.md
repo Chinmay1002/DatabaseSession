@@ -33,6 +33,6 @@
  ---
  
  # ENUM
- create type mood as ENUM ('sad', 'ok', 'good');
+ ` create type mood as ENUM ('sad', 'ok', 'good'); `
  
  
