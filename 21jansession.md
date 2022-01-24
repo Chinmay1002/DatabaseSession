@@ -36,3 +36,23 @@
  ` create type mood as ENUM ('sad', 'ok', 'good'); `
  
  
+---
+
+# OPERATIONS
+
+## UNION
+
+` select * from employees UNION select * from departments; `
+
+## INTERSECT
+
+` select * from employees INTERSECT select * from departments; `
+
+## UNION ALL 
+
+` select * from employees UNION ALL select * from departments; `
+
+
+## MINUS
+
+` select * from employees MINUS select * from departments;
