@@ -1,8 +1,28 @@
-Getting started with the database(Postgres).
+# Getting started with the database(Postgres).
 
-1. Create Database = create database 19jan
+## Data Types
+- Numeric
+- Moneytary
+- Character
+- Binary = Bytea hex, Bytea Escape
+- Date/Time Types
+- Boolean 
+- Enumerated = static, ordered set of values
+- Geometric = point, line, lseg, box, path, path, polygon, circle.
+- Network Address = cidr, inet, macaddr
+- Bit String = Bit(n) and Bit(Varying)
+- Text search types = tsvector, tsquery
+- UUID - University unique Indentifiers
+- XML = to store XML data
 
-2. create table badminton;
+---
+
+## Queries
+``` 
+Create Database Work;
+
+create table badminton (pid int primary key, pname varchar, sport varchar);
+
 insert into badminton (pname, sport) values ('leechong', 'badminton'), ('chenlong', 'badminton'), ('kevin', 'badminton'), ('gideon', 'badminton');
 
 
@@ -16,37 +36,16 @@ alter table cricket add constraint fk foreign key(jerseyno) references badminton
 
 update cricket set pid=1 where pname= 'kevin';
 
-
-
-DATA types
-Numeric
-Moneytary
-Character
-Binary = Bytea hex, Bytea Escape
-Date/Time Types
-Boolean 
-Enumerated = static, ordered set of values
-Geometric = point, line, lseg, box, path, path, polygon, circle.
-Network Address = cidr, inet, macaddr
-Bit String = Bit(n) and Bit(Varying)
-Text search types = tsvector, tsquery
-UUID - University unique Indentifiers
-XML = to store XML data
-
-
 JSON = String, Boolean, number, null
 create table json(id serial not null primary key, name json);
 insert into json(name) values ('{"name" : "chinmay"}');
 
 to retrieve = select columnname -> 'targetname' as name from tablename
 
-
-
-
-
 Arrays
 create table Arrays(name text, c_id integer[], course text[][]);
 insert into Arrays(name, c_id, course) values ('chinmay', '{1,2}', '{{"Maths", "Chemistry"}, {"geometry", "Science"}}');
 
+```
 
 
