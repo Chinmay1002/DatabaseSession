@@ -55,4 +55,4 @@
 
 ## MINUS
 
-` select * from employees MINUS select * from departments;
+` select * from employees MINUS select * from departments; `
