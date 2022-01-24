@@ -29,3 +29,10 @@
  
  
  ` select employee_id, first_name, dept_name from employees full join departments on employees.dept_id = departments.dept_id; `
+ 
+ ---
+ 
+ # ENUM
+ create type mood as ENUM ('sad', 'ok', 'good');
+ 
+ 
