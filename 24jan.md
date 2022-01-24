@@ -14,3 +14,7 @@
 ` alter type mood add value 'grumpy'; ` - adding value to existing enum;
 
 
+# check
+
+` create table trial (name varchar, quantity int check(quantity<5); `
+
