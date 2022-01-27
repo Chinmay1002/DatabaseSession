@@ -81,7 +81,11 @@ execute procedure total_amount();
 
 ` select name, city, state from employees group by grouping set ( (city), (city, state);  `
 
+---
 
+
+# Any
+` select emp_name from employees where salary = any(select Max(salary) from employees); `
 
 
 
