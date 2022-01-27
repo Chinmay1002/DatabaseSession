@@ -8,7 +8,7 @@
 1. Introduction
 - Existiing System
 - Proposed System
-1. Advantages
+5. Advantages
 1. Functional Requirements
 1. Non-Functional Requirements
 1. Software Tools
