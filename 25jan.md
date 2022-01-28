@@ -18,8 +18,8 @@ alter table emp2 add FOREIGN KEY (id) references employees(id) on delete CASCADE
 
 ## WITH 
 ```sql
-` with avg_sal as (select avg(salary) from employees ` - created with statement
-` select * from employees, avg_sal where employees.salary > avg_sal; ` - performed with statement
+ with avg_sal as (select avg(salary) from employees  - created with statement
+ select * from employees, avg_sal where employees.salary > avg_sal;  - performed with statement
 ```
 
 ---
@@ -47,7 +47,9 @@ select name, city, state from employees group by grouping set ( (city), (city, s
 
 
 # ANY
-` select emp_name from employees where salary = any(select Max(salary) from employees); `
+```sql
+select emp_name from employees where salary = any(select Max(salary) from employees); 
+```
 
 
 
