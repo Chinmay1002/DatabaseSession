@@ -72,8 +72,8 @@ select * from employees UNION ALL select * from departments;
 ```
 ---
 
-## MINUS
+## EXCEPT
 
 ```sql
 
-select * from employees MINUS select * from departments;
+select * from employees EXCEPT select * from departments;
