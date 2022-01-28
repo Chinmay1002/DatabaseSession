@@ -1,5 +1,5 @@
 # Joins
- 
+ ```sql
  ## Inner join
  
  
@@ -29,6 +29,8 @@
  
  
  ` select employee_id, first_name, dept_name from employees full join departments on employees.dept_id = departments.dept_id; `
+ 
+ ```
  
  ---
  
