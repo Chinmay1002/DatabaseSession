@@ -32,6 +32,7 @@
  ## full join
  
 ```sql
+
  select employee_id, first_name, dept_name from employees full join departments on employees.dept_id = departments.dept_id;
  
  ```
@@ -41,6 +42,7 @@
  # ENUM
  
  ```sql
+ 
  create type mood as ENUM ('sad', 'ok', 'good');
  ```
  
@@ -51,10 +53,12 @@
 
 ## UNION
 ```sql
+
 select * from employees UNION select * from departments;
 ```
 --- 
 ## INTERSECT
+
 ```sql
 
 select * from employees INTERSECT select * from departments;
@@ -71,4 +75,5 @@ select * from employees UNION ALL select * from departments;
 ## MINUS
 
 ```sql
+
 select * from employees MINUS select * from departments;
