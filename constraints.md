@@ -26,6 +26,21 @@
 ` alter table employees alter column age set NOT NULL; ` - updating an existing column
 
 
+# Check
+
+
+` create table shop(id serial, pr_name varchar, price int check(price > 0)); `
+
+
+# Unique
+
+
+` create table employees1 (id serial, name varchar UNIQUE, age int); `
+
+
+
+
+
 
 
 
