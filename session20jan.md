@@ -1,10 +1,8 @@
 # Database with clauses
 
-<<<<<<< HEAD
-
 -- create table employees(id serial primary key, name varchar,gender varchar, salary int, designation varchar);
 =======
->>>>>>> 9d860935768e876ae7f150719ad33bf3450350e6
+
 
 ` create table employees(id serial primary key, name varchar,gender varchar, salary int, designation varchar); `
 
@@ -13,7 +11,7 @@
 
 
 ---
-```
+``` sql
  select * from employees;
  id |   name   | gender | salary | designation  
 ----+----------+--------+--------+--------------
@@ -37,7 +35,7 @@
 ` select count(*), gender, designation from employees group by designation, gender; `
 
 
-```
+``` sql
  count | gender | designation  
 -------+--------+--------------
      1 | F      | data science
@@ -58,7 +56,7 @@
 
 ` select designation, gender, count(*) from employees where salary between 2000 and 5000 group by gender, designation; `
 
-```
+``` sql
 
  designation  | gender | count 
 --------------+--------+-------
@@ -79,7 +77,7 @@
 
 ` select designation, gender, count(*) from employees where salary < 4000 group by gender, designation; `
 
-```
+``` sql
  designation  | gender | count 
 --------------+--------+-------
  dev          | M      |     2
@@ -100,9 +98,7 @@
 ```
  id 
 ----
- 11
-<<<<<<< HEAD
- 
+ 11 
  
  ---
  
