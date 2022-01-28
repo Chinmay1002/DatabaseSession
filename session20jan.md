@@ -97,20 +97,20 @@ select designation, gender, count(*) from employees where salary < 4000 group by
 
 
 
-` select id from employees order by id desc limit 1; `
 
-```
+
+```sql
+
+select id from employees order by id desc limit 1;
+
  id 
 ----
  11 
  
  ---
- 
- 
-=======
+
 
 ```
---- 
  
  
  
