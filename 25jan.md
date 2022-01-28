@@ -1,4 +1,5 @@
-# Assignment
+# ASSIGNMENT
+- QUERY TO FIND THE DEPARTMENT NAME THROUGH THE DEPARTMENT ID
 
 ` select d.dept_name, e.dept_id, e.first_name from departments d inner join employees e on d.dept_id = e.dept_id where employee_id = 25; `
 
@@ -62,14 +63,14 @@ execute procedure total_amount();
 --- 
 
 
-## offset
+## OFFSET
 
 ` select * from employees limit 2 offset 3; `
 
 ---
 
 
-# Grouping
+# GROUPING
 
 - group by
 
@@ -84,7 +85,7 @@ execute procedure total_amount();
 ---
 
 
-# Any
+# ANY
 ` select emp_name from employees where salary = any(select Max(salary) from employees); `
 
 
