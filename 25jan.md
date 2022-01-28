@@ -22,7 +22,7 @@
 ` select * from employees, avg_sal where employees.salary > avg_sal; ` - performed with statement
 
 
-#TRUNCATE
+# TRUNCATE
 
 ` create table library (id serial, book_name varchar, price int, copies int, total_price int); `
 
