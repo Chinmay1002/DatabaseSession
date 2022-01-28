@@ -62,14 +62,14 @@ execute procedure total_amount();
 --- 
 
 
-## Offset
+## OFFSET
 
 ` select * from employees limit 2 offset 3; `
 
 ---
 
 
-# Grouping
+# GROUPING
 
 - group by
 
@@ -84,7 +84,7 @@ execute procedure total_amount();
 ---
 
 
-# Any
+# ANY
 ` select emp_name from employees where salary = any(select Max(salary) from employees); `
 
 
