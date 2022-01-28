@@ -1,4 +1,5 @@
 # ASSIGNMENT
+- QUERY TO FIND THE DEPARTMENT NAME THROUGH THE DEPARTMENT ID
 
 ` select d.dept_name, e.dept_id, e.first_name from departments d inner join employees e on d.dept_id = e.dept_id where employee_id = 25; `
 
