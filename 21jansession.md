@@ -35,7 +35,10 @@
  ---
  
  # ENUM
- ` create type mood as ENUM ('sad', 'ok', 'good'); `
+ 
+ ```sql
+ create type mood as ENUM ('sad', 'ok', 'good');
+ ```
  
  
 ---
