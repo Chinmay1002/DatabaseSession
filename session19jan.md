@@ -38,12 +38,22 @@ alter table cricket add constraint fk foreign key(jerseyno) references badminton
 
 update cricket set pid=1 where pname= 'kevin';
 
+```
+
+---
+
+```sql
 JSON = String, Boolean, number, null
 create table json(id serial not null primary key, name json);
 insert into json(name) values ('{"name" : "chinmay"}');
 
+```
+---
+
 to retrieve = select columnname -> 'targetname' as name from tablename
 
+---
+``` sql
 Arrays
 create table Arrays(name text, c_id integer[], course text[][]);
 insert into Arrays(name, c_id, course) values ('chinmay', '{1,2}', '{{"Maths", "Chemistry"}, {"geometry", "Science"}}');
