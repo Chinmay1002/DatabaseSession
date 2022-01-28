@@ -21,7 +21,8 @@ $$ language plpgsql;
 
 - executing trigger to the table
 
-```
+``` sql
+
 create trigger fire_total
 before insert
 on lib
