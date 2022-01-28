@@ -3,7 +3,7 @@
  ## Inner join
  
  
- ` select first_name, dept_name from employees inner join departments on employees.dept_id = departments.dept_id where salary < 15000 order by dept_name; `
+  select first_name, dept_name from employees inner join departments on employees.dept_id = departments.dept_id where salary < 15000 order by dept_name; 
  
  
  
