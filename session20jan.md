@@ -1,7 +1,6 @@
 # Database with clauses
 
--- create table employees(id serial primary key, name varchar,gender varchar, salary int, designation varchar);
-=======
+- create table employees(id serial primary key, name varchar,gender varchar, salary int, designation varchar);
 
 
 ` create table employees(id serial primary key, name varchar,gender varchar, salary int, designation varchar); `
