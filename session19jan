@@ -18,7 +18,9 @@
 ---
 
 ## Queries
+
 ``` sql
+
 Create Database Work;
 
 create table badminton (pid int primary key, pname varchar, sport varchar);
