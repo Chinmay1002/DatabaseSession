@@ -50,7 +50,7 @@ insert into json(name) values ('{"name" : "chinmay"}');
 ```
 ---
 
-to retrieve = select columnname -> 'targetname' as name from tablename
+- to retrieve = select columnname -> 'targetname' as name from tablename
 
 ---
 ``` sql
