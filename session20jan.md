@@ -31,10 +31,13 @@
  ---
 
 
-` select count(*), gender, designation from employees group by designation, gender; `
+  
 
 
 ``` sql
+
+select count(*), gender, designation from employees group by designation, gender;
+
  count | gender | designation  
 -------+--------+--------------
      1 | F      | data science
@@ -53,9 +56,9 @@
 ---
 
 
-` select designation, gender, count(*) from employees where salary between 2000 and 5000 group by gender, designation; `
-
 ``` sql
+
+select designation, gender, count(*) from employees where salary between 2000 and 5000 group by gender, designation;
 
  designation  | gender | count 
 --------------+--------+-------
@@ -73,10 +76,10 @@
 
 ---
 
-
-` select designation, gender, count(*) from employees where salary < 4000 group by gender, designation; `
+ 
 
 ``` sql
+select designation, gender, count(*) from employees where salary < 4000 group by gender, designation;
  designation  | gender | count 
 --------------+--------+-------
  dev          | M      |     2
