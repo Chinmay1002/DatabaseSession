@@ -4,7 +4,8 @@
 create table employees(id serial primary key, name varchar,gender varchar, salary int, designation varchar);
 
 
-create table employees(id serial primary key, name varchar,gender varchar, salary int, designation varchar); `
+create table employees(id serial primary key, name varchar,gender varchar, salary int, designation varchar); 
+
 
 insert into employees(name, gender, salary, designation) values ('chinmay', 'M', 1300, 'dev'), ('suyash', 'M', 2000, 'dev'), ('sachin', 'M', 2500, 'devops'), ('mitali', 'F', 3000, 'dev'), ('nikita', 'F', 5000, 'frontend'), ('jayshree', 'F', 4500, 'data science'), ('bhumika', 'F', 3600, 'dev'), ('deepak', 'M', 4100, 'data analyst'), ('anurag', 'M', 2500, 'data science'), ('sumit', 'F', 4600, 'devops'), ('geet', 'M', 6100, 'frontend'); 
 
