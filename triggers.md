@@ -8,7 +8,8 @@
 create or replace function total_price()
 returns trigger
 As $$
-declare total int;
+declare 
+total int;
 begin 
 total = new.price * new.copies;
 return new;
