@@ -64,3 +64,30 @@ create index emp_fname on emp2(first_name);
 create index emp_sal_hiredate on emp2(sal, hire_date);
 ```
 ---
+
+# CASE
+
+```sql 
+select id, first_name
+case 
+when salary = 18000 then 'Good'
+when salary = 25000 then 'best' 
+end status
+from emp2;
+
+
+first_name |  out  
+------------+-------
+ Aatmaram   | 
+ Adarsh     | 
+ Christie   | great
+ David      | good
+ Deepika    | 
+ Han        | 
+ Helen      | 
+ Lakhan     | 
+ Luna       | 
+ Vandana    | 
+(10 rows)
+
+``` 
