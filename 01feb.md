@@ -76,8 +76,8 @@ end status
 from emp2;
 
 
-first_name | out  
-------------+------
+ first_name | status 
+------------+--------
  Aatmaram   | 
  Adarsh     | 
  Christie   | Best
@@ -89,6 +89,7 @@ first_name | out
  Luna       | 
  Vandana    | 
 (10 rows)
+
 
 
 ``` 
