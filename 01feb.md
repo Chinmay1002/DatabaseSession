@@ -76,12 +76,12 @@ end status
 from emp2;
 
 
-first_name |  out  
-------------+-------
+first_name | out  
+------------+------
  Aatmaram   | 
  Adarsh     | 
- Christie   | great
- David      | good
+ Christie   | Best
+ David      | Good
  Deepika    | 
  Han        | 
  Helen      | 
@@ -89,5 +89,6 @@ first_name |  out
  Luna       | 
  Vandana    | 
 (10 rows)
+
 
 ``` 
